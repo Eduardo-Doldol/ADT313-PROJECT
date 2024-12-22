@@ -1,0 +1,104 @@
+.lists-container {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.table-container {
+  background-color: #23252b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.movie-lists {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.movie-lists th {
+  padding: 12px 110px;
+  text-align: left;
+}
+
+.movie-lists td {
+  padding: 12px 70px;
+  text-align: left;
+}
+
+.movie-lists th:first-child {
+  text-align: left;
+  padding-left: 40px; 
+}
+
+.movie-lists td:first-child {
+  text-align: left;
+  padding-left: 40px; 
+}
+
+.movie-lists th {
+  background-color: #34495e;
+  color: white;
+}
+
+.movie-lists tr:nth-child(even) {
+  background-color: #23252b;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.edit-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+}
+
+button.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
+
+.movie-lists td .action-buttons {
+  display: flex;
+  gap: 0.5rem; 
+  justify-content: flex-start; 
+  position: relative; 
+  top: -70px;
+}
+
+.create-container {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.create-container button {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.create-container button:hover {
+  opacity: 0.8;
+}
+
+.create-container button:focus {
+  outline: none;
+}

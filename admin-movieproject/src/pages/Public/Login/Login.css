@@ -1,0 +1,147 @@
+.login-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  position: relative; 
+}
+
+.login-container h1 {
+  position: absolute; 
+  top: 100px; 
+  left: 49%; 
+  color: white;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.border-char img {
+  width: 200px; 
+  height: 450px;
+  margin-top: 80px; 
+  margin-left: -50px;
+}
+
+.border-char {
+  z-index: 1;
+}
+
+.border-login {
+  width: 490px;
+  height: 250px;
+  border: 2px solid #23252b;
+  background-color: #23252b;
+  margin-top: 50px;
+  margin-left: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 140%; 
+  height: 50px;
+  margin: 40px 110px;
+  margin-left: -40px;
+  top: 110px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  border-bottom: 2px solid gray;
+  margin-top: 10px;
+}
+
+.input-box {
+  position: relative;
+  width: 140%;
+  height: 50px;
+  margin: 40px 110px;
+  margin-left: -40px;
+  top: 110px;
+}
+
+.input-box .errors {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  font-size: 12px;
+  color: red;
+  display: block;
+  white-space: nowrap;
+}
+
+.input-box label {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  font-size: 16px;
+  color: white;
+  transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -3px;
+  font-size: 12px;
+  color: gray;
+}
+
+.wrapper .input-box .toggle-password {
+  position: absolute;
+  top: 70%;
+  right: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+  color: lightgrey;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  border: none;
+}
+
+.wrapper .input-box .toggle-password:hover {
+  color: white;
+}
+
+.btn-container {
+  margin-top: 55px;
+}
+
+.btn-container button {
+  color: grey;
+  background: transparent;
+  border: 3px solid #23252b;
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+.btn-container p {
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-left: -5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-container strong {
+  color: orange;
+  cursor: pointer;
+}
+
+strong:hover {
+  color: white;
+}
